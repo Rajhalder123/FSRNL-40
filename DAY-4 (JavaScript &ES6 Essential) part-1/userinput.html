@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <script src="myfun.js"></script>
+    </head>
+    <body>
+        <p id="raj">Result display here </p>
+    </body>
+    <script>
+       
+        
+        function show()
+        {
+        length =parseInt(document.getElementById("length").value);
+        breath =parseInt(document.getElementById("breath").value);
+        raj =area(length,breath);
+        document.getElementById("raj").innerHTML="The area is :"+ raj;
+        alert("The area is :"+ raj)
+        }
+
+    </script>
+    <p>length<input type="text" id="length"></p>
+    <p>Breath <input type="text" id="breath"></p>
+    <p><input type="button" value="Calculate area" onclick="show()"></p>
+</html>
