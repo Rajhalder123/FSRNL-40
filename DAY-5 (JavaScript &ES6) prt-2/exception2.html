@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <p id="raj"></p>
+        <p id="test"></p>
+        <script>
+            function division()
+            {  
+                a= document.getElementById("num1").value;
+                b= document.getElementById("num2").value;
+                
+            
+
+                 try{
+                 if(b==0)
+                 {
+                   throw new Error("Denominator is zero,plese change it")   
+                 }
+
+                else{
+                div = a/b;
+                document.getElementById("res").innerHTML = "Result = "+div
+                }
+         }
+         catch(e)
+        {
+            alert(e)
+         
+        document.getElementById("res").innerHTML = "Result is not calculate"   
+    }   
+  
+}
+        </script>
+        <p>number1<input type = "number" id="num1"></p>
+        <p>number2<input type = "number" id="num1"></p>
+        <input type="button" onclick="division()" value="Result">
+        <p id ="res"></p>
+
+    </body>
+</html>

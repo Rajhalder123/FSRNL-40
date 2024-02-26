@@ -1,0 +1,36 @@
+<html>
+    <head><script src="myfun.js"></script></head>
+    <body>
+        <p id="raj"></p>
+        <p id="test"></p>
+        <script>
+            var a=20;
+
+            function localvarDemo(){
+                var b =101;
+                console.log("This is local function call" +a)
+            };
+            function test(){
+                console.log("This is test function call" +a)
+            }
+
+
+
+
+
+
+
+            //document.getElementById("raj").innerHTML=localvarDemo()
+            //document.getElementById("test").innerHTML = a
+        
+            console.log(a)
+            
+            localvarDemo();
+            test()
+            console.log(a)
+            console.log(b)
+            
+
+        </script>
+    </body>
+</html>
